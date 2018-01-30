@@ -4,7 +4,7 @@
 
   <groupId>org.elasticsearch</groupId>
   <artifactId>elasticsearch-analysis-arirang</artifactId>
-  <version>5.0.1</version>
+  <version>6.0.0</version>
   <packaging>jar</packaging>
 
   <name>elasticsearch-analysis-arirang</name>
@@ -12,8 +12,8 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <elasticsearch.version>5.0.1</elasticsearch.version>
-    <lucene.version>6.2.1</lucene.version>
+    <elasticsearch.version>6.0.0</elasticsearch.version>
+    <lucene.version>7.0.1</lucene.version>
     <org.slf4j.version>1.6.2</org.slf4j.version>
   </properties>
 
@@ -49,37 +49,37 @@
     </dependency>
 
     <dependency>
-      <groupId>com.argo.arirang</groupId>
-      <artifactId>morph</artifactId>
+      <groupId>com.argo</groupId>
+      <artifactId>arirang-morph</artifactId>
       <version>1.1.0</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/lib/arirang-morph-1.1.0.jar</systemPath>
-      <optional>false</optional>
     </dependency>
 
     <dependency>
-      <groupId>org.apache.lucene</groupId>
+      <groupId>com.argo</groupId>
       <artifactId>arirang.lucene-analyzer</artifactId>
-      <version>6.0-1.1.0</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/lib/arirang.lucene-analyzer-6.0-1.1.0.jar</systemPath>
-      <optional>false</optional>
+      <version>7.1.0</version>
     </dependency>
 
-    <dependency>
+    <!-- dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
-    </dependency>
+    </dependency-->
 
     <!-- integration test suite -->
     <dependency>
       <groupId>com.carrotsearch.randomizedtesting</groupId>
       <artifactId>randomizedtesting-runner</artifactId>
-      <version>2.3.2</version>
+      <version>2.5.3</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+		   <groupId>junit</groupId>
+      	   <artifactId>junit</artifactId>
+        </exclusion>
+      </exclusions>      
     </dependency>
-    <dependency>
+    <!-- dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-core</artifactId>
       <version>1.3</version>
@@ -90,7 +90,7 @@
       <artifactId>hamcrest-all</artifactId>
       <version>1.3</version>
       <scope>test</scope>
-    </dependency>
+    </dependency-->
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-test-framework</artifactId>
@@ -100,6 +100,10 @@
         <exclusion>
           <artifactId>junit4-ant</artifactId>
           <groupId>com.carrotsearch.randomizedtesting</groupId>
+        </exclusion>
+        <exclusion>
+		   <groupId>junit</groupId>
+      	   <artifactId>junit</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -116,10 +120,22 @@
       <scope>test</scope>
       <optional>true</optional>
     </dependency>
-    <dependency>
+    <!-- dependency>
       <groupId>net.java.dev.jna</groupId>
       <artifactId>jna</artifactId>
       <version>4.1.0</version>
+    </dependency-->
+
+    <!-- log4j2 -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.7</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.7</version>
     </dependency>
 
   </dependencies>
