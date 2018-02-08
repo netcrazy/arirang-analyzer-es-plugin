@@ -46,12 +46,18 @@
       <groupId>com.argo</groupId>
       <artifactId>arirang-morph</artifactId>
       <version>1.1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/arirang-morph-1.1.0.jar</systemPath>
+      <optional>false</optional> 
     </dependency>
 
     <dependency>
       <groupId>com.argo</groupId>
       <artifactId>arirang.lucene-analyzer</artifactId>
       <version>7.1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/arirang.lucene-analyzer-7.1.0.jar</systemPath>
+      <optional>false</optional>
     </dependency>
 
     <!-- integration test suite -->
