@@ -16,7 +16,7 @@
       <outputDirectory>elasticsearch</outputDirectory>
     </file>
     <file>
-      <source>target/arirang-analyzer-es-plugin-6.2.0.jar</source>
+      <source>target/arirang-analyzer-es-plugin-6.2.1.jar</source>
       <outputDirectory>elasticsearch</outputDirectory>
     </file>
     <file>
