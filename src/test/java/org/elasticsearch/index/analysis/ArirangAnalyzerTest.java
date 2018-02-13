@@ -22,12 +22,12 @@ import org.elasticsearch.test.ESTestCase;
 public class ArirangAnalyzerTest extends ESTestCase {
 
 //  public String query = "이것은 루씬한국어 형태소 분석기 플러그인 입니다.";
-  public String query = "[한국 엘라스틱서치 사용자 그룹의 HENRY입니다.";
+  public String query = "기대효과목표기한";
 
   public void testArirangAnalyzerNamedAnalyzer() throws Exception {
     System.out.println("####### testArirangAnalyzerNamedAnalyzer #######");
 
-    query = "고소/고발";
+    query = "기대효과목표기한";
     TestAnalysis analysis = createTestAnalysis();
     IndexAnalyzers indexAnalyzers = analysis.indexAnalyzers;
     NamedAnalyzer namedAnalyzer = indexAnalyzers.get("arirang_analyzer");
