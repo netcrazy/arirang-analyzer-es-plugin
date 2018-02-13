@@ -27,7 +27,7 @@ public class ArirangAnalyzerTest extends ESTestCase {
   public void testArirangAnalyzerNamedAnalyzer() throws Exception {
     System.out.println("####### testArirangAnalyzerNamedAnalyzer #######");
 
-    query = "고소/고발";
+    query = "기대효과목표기한";
     TestAnalysis analysis = createTestAnalysis();
     IndexAnalyzers indexAnalyzers = analysis.indexAnalyzers;
     NamedAnalyzer namedAnalyzer = indexAnalyzers.get("arirang_analyzer");
