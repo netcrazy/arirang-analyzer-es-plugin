@@ -4,7 +4,7 @@
 
   <groupId>org.elasticsearch</groupId>
   <artifactId>arirang-analyzer-es-plugin</artifactId>
-  <version>6.2.1.1</version>
+  <version>6.2.2.0</version>
   <packaging>jar</packaging>
 
   <name>arirang-analyzer-es-plugin</name>
@@ -12,7 +12,7 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <elasticsearch.version>6.2.1</elasticsearch.version>
+    <elasticsearch.version>6.2.2</elasticsearch.version>
     <org.slf4j.version>1.6.2</org.slf4j.version>
   </properties>
 
