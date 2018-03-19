@@ -5,6 +5,7 @@ import org.elasticsearch.common.inject.AbstractModule;
 /**
  * Created by jeonghoug on 2016. 3. 16..
  */
+@Deprecated
 public class ArirangAnalyzerRestModule  extends AbstractModule {
 
   @Override
