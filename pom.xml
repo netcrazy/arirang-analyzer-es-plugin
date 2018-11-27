@@ -4,7 +4,7 @@
 
   <groupId>org.elasticsearch</groupId>
   <artifactId>elasticsearch-analysis-arirang</artifactId>
-  <version>5.5.0</version>
+  <version>5.5.3</version>
   <packaging>jar</packaging>
 
   <name>elasticsearch-analysis-arirang</name>
@@ -12,7 +12,7 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <elasticsearch.version>5.5.0</elasticsearch.version>
+    <elasticsearch.version>5.5.3</elasticsearch.version>
     <lucene.version>6.6.0</lucene.version>
     <org.slf4j.version>1.6.2</org.slf4j.version>
   </properties>
@@ -59,7 +59,7 @@
 
     <dependency>
       <groupId>com.argo</groupId>
-      <artifactId>arirang.lucene-analyzer-6.5.1</artifactId>
+      <artifactId>arirang.lucene-analyzer-6.6.0</artifactId>
       <version>1.1.0</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/lib/arirang.lucene-analyzer-6.6.0-1.1.0.jar</systemPath>
